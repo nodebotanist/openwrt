@@ -119,7 +119,6 @@ $(eval $(call SetupHostCommand,stat,Cannot find a file stat utility, \
 	stat -c%s $(TMP_DIR)/.host.mk))
 
 $(eval $(call SetupHostCommand,md5sum,, \
-	gmd5sum /dev/null | grep d41d8cd98f00b204e9800998ecf8427e, \
 	md5sum /dev/null | grep d41d8cd98f00b204e9800998ecf8427e, \
 	$(SCRIPT_DIR)/md5sum /dev/null | grep d41d8cd98f00b204e9800998ecf8427e))
 
@@ -144,8 +143,8 @@ $(eval $(call SetupHostCommand,python,Please install Python 2.x, \
 $(eval $(call SetupHostCommand,svn,Please install the Subversion client, \
 	svn --version | grep Subversion))
 
-$(eval $(call SetupHostCommand,git,Please install Git (git-core) >= 1.6.5, \
-	git clone 2>&1 | grep -- --recursive))
+# $(eval $(call SetupHostCommand,git,Please install Git (git-core) >= 1.6.5, \
+# 	git clone 2>&1 | grep -- --recursive))
 
 $(eval $(call SetupHostCommand,file,Please install the 'file' package, \
 	file --version 2>&1 | grep file))

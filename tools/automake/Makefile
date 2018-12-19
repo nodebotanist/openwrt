@@ -7,11 +7,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=automake
-PKG_VERSION:=1.15
+PKG_VERSION:=1.16.1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL:=@GNU/automake
-PKG_MD5SUM:=9a1ddb0e053474d9d1105cfe39b0c48d
+PKG_MD5SUM:=53f38e7591fa57c3d2cee682be668e5b
 
 include $(INCLUDE_DIR)/host-build.mk
 
